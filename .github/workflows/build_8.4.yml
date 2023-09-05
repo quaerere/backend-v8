@@ -19,6 +19,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install
     - name: Run build script
       run: |
         cd $GITHUB_WORKSPACE
@@ -33,6 +37,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install
     - name: Run build script
       run: |
         cd $GITHUB_WORKSPACE
@@ -47,6 +55,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install
     - name: Run build script
       run: |
         cd $GITHUB_WORKSPACE
@@ -61,6 +73,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install
     - name: Run build script
       run: |
         cd $GITHUB_WORKSPACE
@@ -75,6 +91,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install
     - name: Run build script
       run: |
         cd $GITHUB_WORKSPACE
@@ -89,6 +109,10 @@ jobs:
     runs-on: windows-2019
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install
     - name: Run build script
       shell: cmd
       run: |
@@ -109,6 +133,10 @@ jobs:
     runs-on: windows-2019
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install
     - name: Run build script
       shell: cmd
       run: |
@@ -124,6 +152,10 @@ jobs:
     runs-on: windows-2019
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install
     - name: Run build script
       shell: cmd
       run: |
@@ -139,6 +171,10 @@ jobs:
     runs-on: windows-2019
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install
     - name: Run build script
       shell: cmd
       run: |
@@ -154,6 +190,10 @@ jobs:
     runs-on: macos-11
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install
     - name: Use Xcode 11.7 to use SDK 10.15
       run: sudo xcode-select -switch "/Applications/Xcode_11.7.app"
     - name: Run build script
@@ -170,6 +210,10 @@ jobs:
     runs-on: macos-11
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install
     - name: Use Xcode 11.7 to use SDK 10.15
       run: sudo xcode-select -switch "/Applications/Xcode_11.7.app"
     - name: Run build script
@@ -186,6 +230,10 @@ jobs:
     runs-on: macos-11
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm install
     - name: Use Xcode 11.7 to use SDK 10.15
       run: sudo xcode-select -switch "/Applications/Xcode_11.7.app"
     - name: Run build script
@@ -202,6 +250,10 @@ jobs:
   #  runs-on: macos-10.15
   #  steps:
   #  - uses: actions/checkout@v2
+  #  - uses: actions/setup-node@v3
+  #    with:
+  #      node-version: 16
+  #  - run: npm install
   #  - name: Use Xcode 12.0 to use SDK 10.15
   #    run: sudo xcode-select -switch "/Applications/Xcode_12.app"
   #  - name: Run build script
